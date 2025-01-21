@@ -4,14 +4,16 @@
 	"private": true,
 	"scripts": {
 		"dev": "npm-run-all --parallel dev:frontend dev:backend",
-		"dev:frontend": "next dev",
+		"dev:frontend": "next dev --turbopack",
 		"dev:backend": "convex dev",
 		"build": "next build",
 		"start": "next start",
 		"lint": "tsc && next lint"
 	},
 	"dependencies": {
-		"@clerk/nextjs": "^4.31.6",
+		"@clerk/nextjs": "^6.9.15",
+		"@radix-ui/react-label": "^2.1.1",
+		"@radix-ui/react-progress": "^1.1.1",
 		"@radix-ui/react-slot": "^1.1.1",
 		"@t3-oss/env-nextjs": "^0.11.1",
 		"class-variance-authority": "^0.7.1",
@@ -19,6 +21,7 @@
 		"convex": "^1.18.2",
 		"lucide-react": "^0.473.0",
 		"next": "^15.1.5",
+		"next-themes": "^0.4.4",
 		"react": "^19.0.0",
 		"react-dom": "^19.0.0",
 		"tailwind-merge": "^2.6.0",
